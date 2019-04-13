@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import MapContainer from './map'
 
 class Find extends Component{
     render(){
-        return (<h1> Find</h1>);
+        return (
+        <div>
+            <h1> Find</h1>
+            <MapContainer />
+        </div>
+        );
     }
 }
 
 export default Find;
+
