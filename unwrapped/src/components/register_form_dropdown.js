@@ -11,7 +11,7 @@ class FormDropdown extends Component {
     }
     
     itemSelected(item){
-    // this.state.selectedItems.find(item) ? 'jk' : 'huj'
+    //this.state.selectedItems.find(item) === undefined
     var itemsList=this.state.selectedItems.push(item)
       this.setState({
         selected: itemsList
