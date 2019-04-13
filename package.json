@@ -1,0 +1,24 @@
+{
+  "name": "unwrapped_front_end",
+  "version": "1.0.0",
+  "description": "front ends of unwrapped app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuxleyM/unwrapped_frontEnd_Athena.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HuxleyM/unwrapped_frontEnd_Athena/issues"
+  },
+  "homepage": "https://github.com/HuxleyM/unwrapped_frontEnd_Athena#readme",
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.20.3"
+  },
+  "git": { "scripts": { "pre-push": "surge --project ./unwrapped/build --domain unwrapped.surge.sh" } }
+}
