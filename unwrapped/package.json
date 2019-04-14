@@ -5,6 +5,7 @@
   "dependencies": {
     "google-maps-react": "^2.0.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
   },
