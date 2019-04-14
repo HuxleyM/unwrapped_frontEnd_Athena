@@ -10,6 +10,7 @@ class Register extends Component{
               <RegisterForm/>
             </div>);
     }
+    
 }
 
 export default Register;
