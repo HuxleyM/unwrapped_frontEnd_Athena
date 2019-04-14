@@ -1,3 +1,11 @@
+.container {
+  background-color: white;
+  /* height: 100vh; */
+  margin: 0 auto;
+  /* width: 50%; */
+  background-color: #edf6f3;
+  padding: 15px;
+}
 .address-input {
   border-radius: 5px;
   height: 30px;
@@ -21,4 +29,12 @@
 
 .container > h2 {
   color:#00cdbe;
+}
+
+.map-container >img{
+  width: 100%;
+}
+
+.business-title {
+  color: #00cdbe;
 }

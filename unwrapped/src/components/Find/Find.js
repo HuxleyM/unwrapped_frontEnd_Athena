@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Find.css';
+import map from './map.png';
 
 class Find extends Component{
     render(){
@@ -12,16 +13,29 @@ class Find extends Component{
             <input className='address-btn' type='Submit' value='GO'></input>
         </div>
         <br />
-        <div>
+        <div className='map-container'>
             <img 
-            src='./map.png'
+            src={map}
             alt='map'
             />
         </div>
         <div>
-            <h2>Bring your own shop</h2>
+            <h2 className='business-title'>1. E5  Bakehouse</h2>
+            <p>Address: Arch 395, Mentmore Terrace, London E8 3PH</p>
             <h3>Products: </h3>
-            <p>- Dry Goods</p>
+            <ul>
+                <li>Dry Goods</li>
+            </ul>
+        </div>
+        <div>
+            <h2 className='business-title'>2. Bulk Market</h2>
+            <p>Address: 6 Bohemia Place, E8 1DU </p>
+            <h3>Products: </h3>
+            <ul>
+                <li>Fruits</li>
+                <li>Vegetables</li>
+                <li>Beauty Products</li>
+            </ul>
         </div>
     </div>
     );
