@@ -10,7 +10,6 @@ export class MapContainer extends Component {
 
   constructor(props){
     super();
-    console.dir(props)
     this.state ={
       coordinatesObject: props.currentLocation,
       markers: props.markers
