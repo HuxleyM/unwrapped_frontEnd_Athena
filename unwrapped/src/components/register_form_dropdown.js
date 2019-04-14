@@ -11,21 +11,25 @@ class FormDropdown extends Component {
     }
     
     itemSelected(item){
-    //this.state.selectedItems.find(item) === undefined
-    var itemsList=this.state.selectedItems.push(item)
-      this.setState({
-        selected: itemsList
-      })
+      if(this.state.selectedItems.includes(item)){
+        
+      }else{
+        var itemsList=this.state.selectedItems.push(item)
+        this.setState({
+          selected: itemsList
+        })
+      }
     }
     
 
     printPretty(){
-      console.log('hi')
-        return this.state.selectedItems.join('\n');
+      return (<div>
+        { this.state.selectedItems.forEach((item)=>{
+          <button>item</button>})
+        }
+      </div>)
     }
-  
-    // <button onClick={()=>{this.changeUserJourney('find')}}>find a store</button>
-// 
+   
     render() {
       return (
           <div>
