@@ -11,7 +11,18 @@ class Find extends Component{
             <input className='address-input' placeholder='enter your postcode'></input>
             <input className='address-btn' type='Submit' value='GO'></input>
         </div>
-        <div><h2>MAP GOES HERE</h2></div>
+        <br />
+        <div>
+            <img 
+            src='./map.png'
+            alt='map'
+            />
+        </div>
+        <div>
+            <h2>Bring your own shop</h2>
+            <h3>Products: </h3>
+            <p>- Dry Goods</p>
+        </div>
     </div>
     );
     }
