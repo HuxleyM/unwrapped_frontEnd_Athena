@@ -17,9 +17,12 @@ class Find extends Component{
               console.log("Geolocation is not supported by this browser.");
             }
           }
+
       
         getLatandLong = (position) => {
-            let location =  {location : {lat : position.coords.latitude.toFixed(2),  long : position.coords.longitude.toFixed(2)}};
+            var coordinatesObject = {lat : position.coords.latitude.toFixed(2),  long : position.coords.longitude.toFixed(2)}
+
+            let location =  {location : coordinatesObject};
             const body  = JSON.stringify(location)
             fetch('https://enigmatic-badlands-83570.herokuapp.com/api/v1/venues', {
               method: 'POST',
@@ -33,7 +36,8 @@ class Find extends Component{
             })
             .then((response) => {
               this.setState({
-                venues: response
+                venues: response,
+                currentLocation:  coordinatesObject
               })
             })
           }
@@ -44,11 +48,17 @@ class Find extends Component{
 
     
     render(){
+        console.dir(this.state.venues)
         return (
         <div>
             <h1> Find</h1>
-
-            <MapContainer />
+            { this.state.venues.length > 0  &&
+                <MapContainer
+                markers={this.state.venues} 
+                currentLocation={this.state.currentLocation}
+                />
+            }
+       
         </div>
         );
     }
