@@ -20,5 +20,9 @@
     "git-scripts": "^0.2.1",
     "surge": "^0.20.3"
   },
-  "git": { "scripts": { "pre-push": "surge --project ./unwrapped/build --domain unwrapped.surge.sh" } }
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./unwrapped/build --domain unwrapped.surge.sh"
+    }
+  }
 }

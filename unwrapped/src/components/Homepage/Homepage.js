@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Homepage.css';
-import Find from '../find'
-import Register from '../register'
+import Find from '../Find/Find'
+import Register from '../Registration/register_form'
 
 class Homepage extends Component {
   constructor() {
