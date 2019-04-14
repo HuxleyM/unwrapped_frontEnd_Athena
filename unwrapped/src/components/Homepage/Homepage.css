@@ -1,4 +1,4 @@
-.body{
+.body {
   margin: 0;
   box-sizing: border-box;
 }
@@ -9,23 +9,25 @@
   margin: 0 auto;
   width: 50%;
   background-color: #edf6f3;
+  padding: 15px;
 }
 
 .Container-header {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Container-header > h1 {
-  color: #245E71 ;
-  font-size: 4em;
+  color: #245e71;
+  font-size: 5em;
 }
 
 .teal {
   color: #00cdbe;
 }
 
-.Container-about{
+.Container-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,18 +39,19 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 4em;
   margin: 0 0;
   letter-spacing: 1.5px;
-  line-height: 50px;
+  line-height: 55px;
 }
 
 .Container-about > p {
   line-height: 25px;
   text-align: center;
+  font-size: 1.2em;
 }
 
-.mainMenuButton{
+.Btn-container {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -79,11 +82,34 @@
   background-color: #2aa5a1;
 }
 
-.plastic-button{
+.plastic-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border: none;
   margin: 20px auto 0 auto;
   background-color: #a3d858;
+}
+
+@media (max-width: 700px) {
+  .Container-header > h1 {
+    font-size: 3em;
+  }
+
+  .Container-about > h2 {
+    font-size: 2em;
+    line-height: 33px;
+  }
+
+  .Container-about > p {
+    text-align: justify;
+  }
+
+  .register {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .plastic-button {
+    margin-top: 40px;
+  }
 }

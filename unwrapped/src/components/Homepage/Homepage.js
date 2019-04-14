@@ -23,22 +23,25 @@ class Homepage extends Component {
         <header className="Container-header">
           <h1>UnWrapped</h1>
         </header>
-        <section className='Container-about'>
-          <h2 className='teal'>naked food</h2>
-          <h2>made easy</h2>
-          <p>
-            Find or register the nearest shop that sells products free of plastic packaging.
-          </p>
-        </section>
-        { this.state.userJourney === 'mainMenu' && 
+        { this.state.userJourney === 'mainMenu' &&
         <div>
-          <div className='mainMenuButton'>
-              <button className='btn find' onClick={()=>{this.changeUserJourney('find')}}>find a store</button>
-              <button className='btn register' onClick={()=>{this.changeUserJourney('register')}}>register a store</button>
-          </div>
+          <section className='Container-about'>
+            <h2 className='teal'>naked food</h2>
+            <h2>made easy</h2>
+            <p>
+              Find or register shops that sell products free of plastic packaging
+            </p>
+          </section>
+          
           <div>
-            <button className='plastic-button btn' onClick={()=>{this.changeUserJourney('facts')}}>learn more</button>
-          </div>
+            <div className='Btn-container'>
+                <button className='btn find' onClick={()=>{this.changeUserJourney('find')}}>find a shop</button>
+                <button className='btn register' onClick={()=>{this.changeUserJourney('register')}}>register a shop</button>
+            </div>
+            <div>
+              <button className='plastic-button btn' onClick={()=>{this.changeUserJourney('facts')}}>learn more</button>
+            </div>
+          </div> 
         </div> 
         }
 
